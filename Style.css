@@ -1,0 +1,58 @@
+.frame{
+    position: relative;
+    left: 0px;
+    top: 100px;
+    background-color: #1ab188;
+    padding: 40px;
+    max-width:600px;
+    max-height: 400px;
+    margin:40px auto;
+}
+
+
+
+h1{
+    background-color: black;
+    color: red;
+    text-align: center;
+    text-shadow: 2px 2px;
+}
+
+.changeTextLabel{
+    color:red;
+    font-family: "Times New Roman";
+    font-weight: bold;
+}
+
+button{
+    position: relative;
+    left: 50px;    
+    background-color: lightsalmon;
+    font-weight: bold;
+    width: 100px;
+    padding: 1em 1.2em;
+    color: white;
+    font-size: 15px;
+    border-radius: .3em;
+    border: none;
+    border-bottom: 4px solid lightsalmon;
+    cursor: pointer;
+}
+
+.changeInput{
+    position: relative;
+    left: 50px;
+}
+
+.changeResult{
+    position: relative;
+    bottom: 280px;
+    left: 250px;
+}
+
+.changeTextResult{
+    font-size: larger;
+    font-family: "Times New Roman";
+    font-weight: bold;
+}
+

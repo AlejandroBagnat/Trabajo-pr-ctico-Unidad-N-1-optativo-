@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" type="text/javascript" href="./Index.js">
+</head>
+<body>
+    <div>
+        
+        <form class="frame" onmouseover="alterStyleIn(this)" onmouseout="alterStyleOut(this)" > 
+            <h1>Formulario</h1>
+            <!--Reciben los datos ingresados por el usuario-->
+            <div class="changeInput">
+                <div>
+                    <label class="changeTextLabel">Nombre: </label>
+                    </br>
+                    <input type="text" name="name" id="nameId" placeholder="Pedro">
+                </div>
+                <div>
+                    <label class="changeTextLabel">Apellido: </label>
+                    </br>
+                    <input type="text" name="surname" id="surnameId" placeholder="Sanchez">
+                </div>
+                <div>
+                    <label class="changeTextLabel">DNI: </label>
+                    </br>
+                    <input type="text" name="dni" id="dniId" placeholder="30265432">
+                </div>
+                <div>
+                    <label class="changeTextLabel">Email: </label>
+                    </br>
+                    <input type="text" name="email" id="emailId" placeholder="Pedro@gmail.com">
+                </div>
+                <div>
+                    <label class="changeTextLabel">Telefono: </label>
+                    </br>
+                    <input type="text" name="phone" id="phoneId" placeholder="555-1233">
+                </div>
+                <div>
+                    <label class="changeTextLabel">Tipo de seguro: </label></br>
+                    <select onchange="showInsurance()" name="select" id="show">
+                        <option></option>
+                        <option value="$ 500">Basico</option>
+                        <option value="$ 1000">Intermedio</option>
+                        <option value="$ 1500">Premium</option>
+                    </select>
+                </div>
+            </div>
+           
+            
+            </br>
+            <div>
+                <button name="boton" id="myAnchor" onclick="myfun(event);data()">Datos</button>
+            </div>
+                    <!-- onclick="data()" -->
+        
+
+            <!--Muestran los datos-->
+            <div class="changeResult">
+                <div>   
+                    <label class="changeTextResult" id="idName">Nombre</label>
+                </div> </br>
+                <div>   
+                    <label class="changeTextResult" id="idSurname">Apellido</label>
+                </div> </br>
+                <div>   
+                    <label class="changeTextResult" id="idEmail">Email</label>
+                </div> </br>
+                <div>   
+                    <label class="changeTextResult" id="idDni">DNI</label>
+                </div> </br>
+                <div>   
+                    <label class="changeTextResult" id="idPhone">Telefono</label>
+                </div></br>
+                <div>
+                    <label class="changeTextResult" id="result">Resultado</label>
+                </div> 
+            </div>
+         
+        </form>
+    </div>
+</body>
+</html>
+
+<script src="./Index.js"></script>
+
